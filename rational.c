@@ -1,9 +1,12 @@
 #include "rational.h"
-#include "dice.h"
+#include "c_ext.h"
 
 #include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
+
+//TODO: add generic implementation
+void panic(const char *fmt, ...) NORETURN;
 
 #ifdef __clang__
   #if !__has_builtin(__builtin_mul_overflow)
