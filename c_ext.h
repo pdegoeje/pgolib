@@ -9,4 +9,6 @@
 
 #define container_of(ptr, type, member) (type *)((intptr_t)(ptr) - offsetof(type, member))
 
+void panic(const char *fmt, ...) NORETURN;
+
 #endif

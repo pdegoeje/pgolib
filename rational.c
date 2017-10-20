@@ -5,9 +5,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-//TODO: add generic implementation
-void panic(const char *fmt, ...) NORETURN;
-
 #ifdef __clang__
   #if !__has_builtin(__builtin_mul_overflow)
     #warning "Compiler does not support generic overflow checking"
